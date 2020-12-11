@@ -36,17 +36,4 @@ public class Order {
 		this.customer = customer;
 	}
 
-	@Override
-	public boolean equals(Object o) {
-		if (this == o)
-			return true;
-		if (!(o instanceof Order))
-			return false;
-		return id != null && id.equals(((Order) o).getId());
-	}
-
-	@Override
-	public int hashCode() {
-		return 50;
-	}
 }
