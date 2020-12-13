@@ -24,7 +24,7 @@ public class Employee {
 	@Column(name = "last_name")
 	private String lastName;
 	
-    @OneToOne(mappedBy = "employee", cascade = CascadeType.ALL)
+    	@OneToOne(mappedBy = "employee", cascade = CascadeType.ALL)
 	private EmployeeDetails employeeDetails;
 
 	public Integer getId() {

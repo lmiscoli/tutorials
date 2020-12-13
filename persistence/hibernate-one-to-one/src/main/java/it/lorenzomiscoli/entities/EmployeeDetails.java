@@ -20,9 +20,9 @@ public class EmployeeDetails {
 	
 	private String address;
 	
-    @OneToOne
-    @MapsId
-    @JoinColumn(name = "employee_id")
+    	@OneToOne
+    	@MapsId
+    	@JoinColumn(name = "employee_id")
 	private Employee employee;
 
 	public Integer getId() {
