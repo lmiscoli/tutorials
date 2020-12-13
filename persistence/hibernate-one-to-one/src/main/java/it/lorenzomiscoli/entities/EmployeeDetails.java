@@ -16,7 +16,7 @@ public class EmployeeDetails {
 	@Column(name = "employee_id")
 	private Integer id;
 	
-	private String department;;
+	private String department;
 	
 	private String address;
 	
