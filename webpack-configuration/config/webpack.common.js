@@ -16,38 +16,11 @@ module.exports = {
                 test: /\.css$/,
                 use: ['style-loader', MiniCssExtractPlugin.loader, 'css-loader']
             }, {
-                test: /\.(png|svg|jpg|gif|ico)$/,
-                use: [{
-                    loader: 'file-loader',
-                    options: {
-                        name: '[name].[ext]',
-                        outputPath: './assets/images'
-                    }
-                }]
-            }, {
-                test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
-                use: [{
-                    loader: 'file-loader',
-                    options: {
-                        name: '[name].[ext]',
-                        outputPath: './assets/fonts'
-                    }
-                }]
-            }, {
                 test: /\.(html)$/,
                 loader: 'html-loader',
                 options: {
                     attrs: [':data-image', ':src', 'link:href']
                 }
-            }, {
-                test: /\.(mp3|ogg|aac|flac|wma|mka)$/,
-                use: [{
-                    loader: 'file-loader',
-                    options: {
-                        name: '[name].[ext]',
-                        outputPath: './assets/audio'
-                    }
-                }]
             }
         ]
     },
