@@ -6,9 +6,9 @@
         <class>it.lorenzomiscoli.entities</class>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
-            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/tutorials?serverTimezone=UTC" />
-            <property name="javax.persistence.jdbc.user" value="admin" />
-            <property name="javax.persistence.jdbc.password" value="Derby1993" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/hibernate_one_to_many" />
+            <property name="javax.persistence.jdbc.user" value="sa" />
+            <property name="javax.persistence.jdbc.password" value="" />
 			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLInnoDBDialect" />
 			<property name="hibernate.show_sql" value="true" />
         </properties>
